@@ -1,3 +1,11 @@
 # Task_02
-search time : 3 hrs
-draw sketch : 45 min
+
+1) sketch :
+    search : 3 hrs
+    draw : 45 min
+
+2) responsive :
+    write : 14 hrs
+
+
+

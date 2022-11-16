@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task_02 - Responsive Structure</title>
+    <link href="grid.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div class="row">
+
+        <!-- A- sidebar -->
+        <aside id="sidebar" class="col-xs-12 col-sm-2">
+          <div id="sidebar_container">Sidebar</div>
+        </aside>
+
+        <!-- B- main -->
+        <main id="content" class="col-xs-12 col-sm-10">
+
+          <!-- B1- portfolio -->
+          <div class="row">
+            <div class="col-xs-12">
+              <header id="portfolio">
+                <h4>My Portfolio</h4>
+                <nav>item1 item2 item3</nav>
+              </header>
+            </div>
+          </div>
+
+          <!-- B2- images -->
+          <div class="row">
+            <section id="album">
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <article class="album_container">
+                  <img src="#" title="img1" />
+                  <h3>title</h3>
+                  <p>text</p>
+                </article>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <article class="album_container">
+                  <img src="#" title="img2" />
+                  <h3>title</h3>
+                  <p>text</p>
+                </article>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <article class="album_container">
+                  <img src="#" title="img3" />
+                  <h3>title</h3>
+                  <p>text</p>
+                </article>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <article class="album_container">
+                  <img src="#" title="img4" />
+                  <h3>title</h3>
+                  <p>text</p>
+                </article>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <article class="album_container">
+                  <img src="#" title="img5" />
+                  <h3>title</h3>
+                  <p>text</p>
+                </article>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <article class="album_container">
+                  <img src="#" title="img6" />
+                  <h3>title</h3>
+                  <p>text</p>
+                </article>
+              </div>
+            </section>
+
+            <div class="col-xs-12">
+              <div id="pagination"><< 1 2 3 4 5 >></div>
+            </div>
+
+          </div>
+
+          <!-- B3- about me -->
+          <div class="row">
+            <div class="col-xs-12">
+              <article id="about_container">
+                <h4>About Me</h4>
+                <p>description</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- b4- technical skills -->
+          <div class="row">
+            <div class="col-xs-12">
+              <section id="skills_container">
+
+                <h4>Technical Skills</h4>
+
+                <article>
+                  <h5>skill 1</h5>
+                  <div class="progress_bar">
+                    <div id="progress1"></div>
+                  </div>
+                </article>
+
+                <article>
+                  <h5>skill 2</h5>
+                  <div class="progress_bar">
+                    <div id="progress2"></div>
+                  </div>
+                </article>
+
+                <article>
+                  <h5>skill 3</h5>
+                  <div class="progress_bar">
+                    <div id="progress3"></div>
+                  </div>
+                </article>
+
+              </section>
+            </div>
+          </div>
+
+          <!-- B5- charge -->
+          <div class="row">
+            <section id="charge_container">
+
+              <h4>How Much I Charge</h4>
+
+              <div class="col-xs-12 col-sm-4">
+                <article class="charge_item">Basic</article>
+              </div>
+
+              <div class="col-xs-12 col-sm-4">
+                <article class="charge_item">pro</article>
+              </div>
+
+              <div class="col-xs-12 col-sm-4">
+                <article class="charge_item">premium</article>
+              </div>
+
+            </section>
+          </div>
+
+          <!-- C- contact/footer -->
+          <footer>
+
+            <!-- C1- contact me -->
+            <div class="row">
+              <section id="contact">
+
+                <div id="contact_container">
+                  <h4>Contact Me</h4>
+
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="contact_item" id="email">email</div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="contact_item" id="location">location</div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="contact_item" id="phone">phone</div>
+                  </div>
+                </div>
+
+              </section>
+            </div>
+
+            <!-- C2- send message -->
+            <div class="row">
+              <section id="send-container">
+                <div id="bottom">send message</div>
+              </section>
+            </div>
+
+            <!-- C3- details -->
+            <div class="row">
+              <section id="details_container">
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <article class="details_item" id="footer">
+                    <h5>Footer</h5>
+                    <p>text</p>
+                  </article>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <article class="details_item" id="posts">
+                    <h5>Blog Posts</h5>
+                    <div>text</div>
+                  </article>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                  <article class="details_item" id="tags">
+                    <h5>popular tags</h5>
+                    <span>item1 item2 item3 ...</span>
+                  </article>
+                </div>
+
+              </section>
+            </div>
+
+            <!-- C4- power -->
+            <div class="row">
+              <section id="power_container">
+                <p>powered by ...</p>
+              </section>
+            </div>
+
+          </footer>
+
+        </main>
+
+      </div>
+    </div>
+    
+  </body>
+</html>
