@@ -11,10 +11,10 @@ body {
   float: left;
 }
 
-.row::after {
-  content: " ";
-  display: block;
+.clearfix::after {
+  content: "";
   clear: both;
+  display: table;
 }
 
 #sidebar {
@@ -44,28 +44,28 @@ body {
 }
 
 #pagination {
-  height: 30px;
+  height: 50px;
   margin: 10px 5px 5px 5px;
-  padding-top: 5px;
-  text-align: center;
+  padding-top: 15px;
+  clear: left;
 }
 
-#about_container {
+#about {
   height: 150px;
   border-bottom: 1px solid rgb(100, 105, 86);
   margin: 0 5px 5px 5px;
   padding-top: 5px;
 }
 
-#skills_container {
+#skills {
   padding-top: 5px;
   border-bottom: 1px solid rgb(100, 105, 86);
   margin: 0 5px 5px 5px;
 }
 
-#skills_container h4 {
+#skills h1 {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .progress_bar {
@@ -93,20 +93,24 @@ body {
   background-color: #616161;
 }
 
-#charge_container {
+#charge {
   margin: 0 5px 5px 5px;
 }
 
-#charge_container h4 {
+#charge h1 {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
-.charge_item {
+.charge_container {
   height: 250px;
   margin: 0 5px 5px 0;
   text-align: center;
   background-color: #fff;
+}
+
+footer {
+  clear: left;
 }
 
 #contact {
@@ -114,35 +118,36 @@ body {
 }
 
 #contact_container {
-  height: 190px;
   margin: 15px 5px 0 5px;
+  padding: 0 5px 30px 5px;
   border-bottom: 1px solid black;
 }
 
-#contact_container h4 {
+#contact_container h1 {
   padding-top: 10px;
   padding-bottom: 20px;
 }
 
 .contact_item {
-  margin: 0 5px;
   height: 40px;
   background-color: #616161;
   text-align: center;
+  color: white;
 }
 
 #location {
   background-color: #009688;
 }
 
-#send-container {
+#send_message {
+  clear: left;
   height: 50px;
   background-color: #9e9e9e;
   padding-top: 10px;
   padding-left: 10px;
 }
 
-#send-container #bottom {
+#send_message #bottom {
   height: 25px;
   width: 150px;
   color: white;
@@ -150,25 +155,25 @@ body {
   background-color: black;
 }
 
-#details_container {
-  height: 280px;
+#details {
   background-color: #616161;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 5px;
 }
 
-.details_item {
+.details_container {
   margin: 0 5px 5px 5px;
+  padding-left: 10px;
   height: 80px;
+  color: white;
 }
 
-#power_container {
+#power {
   background-color: black;
   color: white;
   text-align: center;
   height: 25px;
 }
-
 
 /* responsive ...............................*/
 
@@ -183,28 +188,11 @@ body {
   }
 
   #pagination {
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   footer {
-    margin-left: -5px;
-  }
-
-  #contact_container {
-    height: 110px;
-  }
-
-  #details_container {
-    height: 180px;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  #details_container {
-    height: 100px;
-  }
-
-  footer {
-    margin-left: -5px;
+    float: right;
+    width: 83.33333333%;
   }
 }
