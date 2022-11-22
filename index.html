@@ -5,202 +5,215 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task_02 - Responsive Structure</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <link href="grid.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
   </head>
+
   <body>
 
     <div class="wrapper">
 
-        <!-- A- sidebar -->
-        <aside id="sidebar" class="col-xs-12 col-sm-2">
-          <div id="sidebar_container">Sidebar</div>
-        </aside>
+      <!-- A- sidebar -->
+      <aside id="sidebar" class="col-xs-12 col-sm-3">
+        <div id="sidebar_container" class="clearfix">
+          
+          <img src="images/menu.png" id="menu" />
+          <img src="images/user.gif" id="user" />
 
-        <!-- B- main -->
-        <main id="content" class="col-xs-12 col-sm-10">
+          <div id="sidebar_content">
+            <h4>PORTFOLIO</h4>
+            <p>Template by W3-CSS</p>
 
-          <!-- B1- portfolio -->
-            <section id="portfolio">
-              <h1>My Portfolio</h1>
-              <nav>item1 item2 item3</nav>
-            </section>
+            <nav id="side_nav">
+              <a href="#"><i class="fa fa-th-large"></i>PORTFOLIO</a>
+              <a href="#"><i class="fa fa-user"></i>ABOUT</a>
+              <a href="#"><i class="fa fa-envelope"></i>CONTACT</a>
+            </nav>
 
-          <!-- B2- images -->
-            <section id="album">
+            <div id="icon">
+              <a href="#"><i class="fa fa-facebook-official"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-snapchat"></i></a>
+              <a href="#"><i class="fa fa-pinterest"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </aside>
 
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <article class="album_container">
-                  <img src="#" title="img1" />
-                  <h1>title1</h1>
-                  <p>text1</p>
-                </article>
-              </div>
+      <!-- B- main -->
+      <main id="content" class="col-xs-12 col-sm-9">
+        <!-- B1- portfolio -->
+        <section id="portfolio">
+          <h1>My Portfolio</h1>
+          <nav>item1 item2 item3</nav>
+        </section>
 
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <article class="album_container">
-                  <img src="#" title="img2" />
-                  <h1>title2</h1>
-                  <p>text2</p>
-                </article>
-              </div>
+        <!-- B2- images -->
+        <section id="album">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <article class="album_container">
+              <img src="#" title="img1" />
+              <h3>title1</h3>
+              <p>text1</p>
+            </article>
+          </div>
 
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <article class="album_container">
-                  <img src="#" title="img3" />
-                  <h1>title3</h1>
-                  <p>text3</p>
-                </article>
-              </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <article class="album_container">
+              <img src="#" title="img2" />
+              <h3>title2</h3>
+              <p>text2</p>
+            </article>
+          </div>
 
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <article class="album_container">
-                  <img src="#" title="img4" />
-                  <h1>title4</h1>
-                  <p>text4</p>
-                </article>
-              </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <article class="album_container">
+              <img src="#" title="img3" />
+              <h3>title3</h3>
+              <p>text3</p>
+            </article>
+          </div>
 
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <article class="album_container">
-                  <img src="#" title="img5" />
-                  <h1>title5</h1>
-                  <p>text5</p>
-                </article>
-              </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <article class="album_container">
+              <img src="#" title="img4" />
+              <h3>title4</h3>
+              <p>text4</p>
+            </article>
+          </div>
 
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <article class="album_container">
-                  <img src="#" title="img6" />
-                  <h1>title6</h1>
-                  <p>text6</p>
-                </article>
-              </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <article class="album_container">
+              <img src="#" title="img5" />
+              <h3>title5</h3>
+              <p>text5</p>
+            </article>
+          </div>
 
-              <div id="pagination"><< 1 2 3 4 5 >></div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <article class="album_container">
+              <img src="#" title="img6" />
+              <h3>title6</h3>
+              <p>text6</p>
+            </article>
+          </div>
 
-            </section>
+          <div id="pagination"><< 1 2 3 4 5 >></div>
+        </section>
 
+        <!-- B3- about me -->
+        <section id="about">
+          <h3>About Me</h3>
+          <p>description</p>
+        </section>
 
-          <!-- B3- about me -->
-            <section id="about">
-              <h1>About Me</h1>
-              <p>description</p>
-            </section>
+        <!-- B4- technical skills -->
+        <section id="skills">
+          <h3>Technical Skills</h3>
 
-          <!-- B4- technical skills -->
-            <section id="skills">
+          <article class="skills_container">
+            <h4>skill 1</h4>
+            <div class="progress_bar">
+              <div id="progress1"></div>
+            </div>
+          </article>
 
-              <h1>Technical Skills</h1>
+          <article class="skills_container">
+            <h4>skill 2</h4>
+            <div class="progress_bar">
+              <div id="progress2"></div>
+            </div>
+          </article>
 
-              <article class="skills_container">
-                <h2>skill 1</h2>
-                <div class="progress_bar">
-                  <div id="progress1"></div>
-                </div>
-              </article>
+          <article class="skills_container">
+            <h4>skill 3</h4>
+            <div class="progress_bar">
+              <div id="progress3"></div>
+            </div>
+          </article>
+        </section>
 
-              <article class="skills_container">
-                <h2>skill 2</h2>
-                <div class="progress_bar">
-                  <div id="progress2"></div>
-                </div>
-              </article>
+        <!-- B5- charge -->
+        <section id="charge" class="clearfix">
+          <h3>How Much I Charge</h3>
 
-              <article class="skills_container">
-                <h2>skill 3</h2>
-                <div class="progress_bar">
-                  <div id="progress3"></div>
-                </div>
-              </article>
+          <div class="col-xs-12 col-sm-4">
+            <article class="charge_container">Basic</article>
+          </div>
 
-            </section>
+          <div class="col-xs-12 col-sm-4">
+            <article class="charge_container">pro</article>
+          </div>
 
-          <!-- B5- charge -->
-            <section id="charge">
+          <div class="col-xs-12 col-sm-4">
+            <article class="charge_container">premium</article>
+          </div>
+        </section>
+      </main>
 
-              <h1>How Much I Charge</h1>
+      <!-- C- footer -->
+      <footer>
+        <!-- C1- contact me -->
+        <section id="contact">
+          <div id="contact_container" class="clearfix">
+            <h3>Contact Me</h3>
 
-              <div class="col-xs-12 col-sm-4">
-                <article class="charge_container">Basic</article>
-              </div>
-
-              <div class="col-xs-12 col-sm-4">
-                <article class="charge_container">pro</article>
-              </div>
-
-              <div class="col-xs-12 col-sm-4">
-                <article class="charge_container">premium</article>
-              </div>
-
-            </section>
-
-        </main>
-
-        <!-- C- footer -->
-        <footer>
-
-          <!-- C1- contact me -->
-          <section id="contact">
-
-            <div id="contact_container" class="clearfix">
-
-              <h1>Contact Me</h1>
-
-              <div class="col-xs-12 col-sm-4">
-                <div class="contact_item" id="email">email</div>
-              </div>
-
-              <div class="col-xs-12 col-sm-4">
-                <div class="contact_item" id="location">location</div>
-              </div>
-
-              <div class="col-xs-12 col-sm-4">
-                <div class="contact_item" id="phone">phone</div>
-              </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="contact_item" id="email">email</div>
             </div>
 
-          </section>
-
-          <!-- C2- send message -->
-          <section id="send_message">
-            <div id="bottom">send message</div>
-          </section>
-
-          <!-- C3- details -->
-          <section id="details" class="clearfix">
-
-            <div class="col-xs-12 col-sm-6 col-md-4">
-              <article class="details_container" id="footer">
-                <h1>Footer</h1>
-                <p>text</p>
-              </article>
+            <div class="col-xs-12 col-sm-4">
+              <div class="contact_item" id="location">location</div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4">
-              <article class="details_container" id="posts">
-                <h1>Blog Posts</h1>
-                <div>text</div>
-              </article>
+            <div class="col-xs-12 col-sm-4">
+              <div class="contact_item" id="phone">phone</div>
             </div>
+          </div>
+        </section>
 
-            <div class="col-xs-12 col-sm-12 col-md-4">
-              <article class="details_container" id="tags">
-                <h1>popular tags</h1>
-                <span>item1 item2 item3 ...</span>
-              </article>
-            </div>
+        <!-- C2- send message -->
+        <section id="send_message">
+          <div id="bottom">send message</div>
+        </section>
 
-          </section>
+        <!-- C3- details -->
+        <section id="details" class="clearfix">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <article class="details_container" id="footer">
+              <h2>Footer</h2>
+              <p>text</p>
+            </article>
+          </div>
 
-          <!-- C4- power -->
-          <section id="power">
-            <p>powered by ...</p>
-          </section>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <article class="details_container" id="posts">
+              <h2>Blog Posts</h2>
+              <div>text</div>
+            </article>
+          </div>
 
-        </footer>
+          <div class="col-xs-12 col-sm-12 col-md-4">
+            <article class="details_container" id="tags">
+              <h2>popular tags</h2>
+              <span>item1 item2 item3 ...</span>
+            </article>
+          </div>
+        </section>
+
+        <!-- C4- power -->
+        <section id="power">
+          <p>powered by ...</p>
+        </section>
+      </footer>
 
     </div>
-
+    
   </body>
 </html>

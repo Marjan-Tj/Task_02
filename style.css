@@ -1,5 +1,6 @@
 body {
   background-color: #f1f1f1;
+  font-family: sans-serif;
 }
 
 .wrapper {
@@ -17,22 +18,75 @@ body {
   display: table;
 }
 
+/* =============== A- sidebar =============== */
+
 #sidebar {
-  height: 50px;
+  height: 100px;
 }
 
 #sidebar_container {
-  margin: 5px;
-  height: 100%;
+  padding-top: 15px;
+  padding-left: 10px;
+  margin: 0 10px;
 }
 
+#menu {
+  float: left;
+}
+
+#user {
+  float: right;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+#sidebar_content {
+  display: none;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 230%;
+}
+
+#sidebar_content p {
+  font-size: 14px;
+  color: #7b7878;
+}
+
+#sidebar_content a {
+  text-decoration: none;
+  color: black;
+}
+
+#sidebar_content a:hover,
+#sidebar_content a:active {
+  color: #009688;
+}
+
+#side_nav a {
+  display: block;
+  font-size: 14px;
+}
+
+#side_nav i {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#icon {
+  font-size: 16px;
+  margin-left: -5px;
+}
+
+/* =============== B1- portfolio =============== */
 #portfolio {
-  height: 100px;
+  height: 150px;
   border-bottom: 1px solid rgb(100, 105, 86);
   margin: 0 5px 5px 5px;
   padding-top: 5px;
 }
 
+/* =============== B2- album =============== */
 #album {
   text-align: center;
 }
@@ -50,6 +104,7 @@ body {
   clear: left;
 }
 
+/* =============== B3- about me =============== */
 #about {
   height: 150px;
   border-bottom: 1px solid rgb(100, 105, 86);
@@ -57,13 +112,14 @@ body {
   padding-top: 5px;
 }
 
+/* =============== B4- technical skills =============== */
 #skills {
   padding-top: 5px;
   border-bottom: 1px solid rgb(100, 105, 86);
   margin: 0 5px 5px 5px;
 }
 
-#skills h1 {
+#skills h3 {
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -93,11 +149,12 @@ body {
   background-color: #616161;
 }
 
+/* =============== B5- charge =============== */
 #charge {
   margin: 0 5px 5px 5px;
 }
 
-#charge h1 {
+#charge h3 {
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -109,10 +166,12 @@ body {
   background-color: #fff;
 }
 
+/* =============== C- footer =============== */
 footer {
   clear: left;
 }
 
+/* =============== C1- contact me =============== */
 #contact {
   background-color: #9e9e9e;
 }
@@ -123,7 +182,7 @@ footer {
   border-bottom: 1px solid black;
 }
 
-#contact_container h1 {
+#contact_container h3 {
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -139,6 +198,7 @@ footer {
   background-color: #009688;
 }
 
+/* =============== C2- snd message =============== */
 #send_message {
   clear: left;
   height: 50px;
@@ -155,6 +215,7 @@ footer {
   background-color: black;
 }
 
+/* =============== C3- details =============== */
 #details {
   background-color: #616161;
   padding-top: 20px;
@@ -168,6 +229,7 @@ footer {
   color: white;
 }
 
+/* =============== C4- power =============== */
 #power {
   background-color: black;
   color: white;
@@ -175,24 +237,46 @@ footer {
   height: 25px;
 }
 
-/* responsive ...............................*/
+/* ------------------ responsive ------------------ */
 
 @media screen and (min-width: 720px) {
+  /* =============== sidebar =============== */
   #sidebar {
     height: 550px;
   }
 
   #sidebar_container {
-    margin-top: 0;
     background-color: #fff;
+    height: 100%;
+    margin-left: 0;
   }
 
+  #sidebar_content {
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #user {
+    float: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    width: 120px;
+    height: 120px;
+  }
+
+  /* =============== paggination =============== */
   #pagination {
     margin-top: 25px;
   }
 
+  /* =============== footer =============== */
   footer {
     float: right;
-    width: 83.33333333%;
+    width: 75%;
   }
 }
