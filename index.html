@@ -5,23 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task_02 - Responsive Structure</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link href="grid.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
-
     <div class="wrapper">
-
       <!-- A- sidebar -->
-      <aside id="sidebar" class="col-xs-12 col-sm-3">
+      <aside id="sidebar">
         <div id="sidebar_container" class="clearfix">
-          
-          <img src="images/menu.png" id="menu" />
+          <span id="humburger"><i class="fa fa-bars"></i></span>
           <img src="images/user.gif" id="user" />
 
           <div id="sidebar_content">
@@ -47,60 +45,85 @@
       </aside>
 
       <!-- B- main -->
-      <main id="content" class="col-xs-12 col-sm-9">
+      <main id="content">
         <!-- B1- portfolio -->
         <section id="portfolio">
           <h1>My Portfolio</h1>
-          <nav>item1 item2 item3</nav>
+          <nav id="nav">
+            <span>Filter:</span>
+            <button id="all">ALL</button>
+            <button id="design"><i class="fa fa-diamond"></i>Design</button>
+
+            <button id="photo"><i class="fa fa-photo"></i>Photos</button>
+            <button id="art"><i class="fa fa-map-pin"></i>Art</button>
+          </nav>
         </section>
 
         <!-- B2- images -->
         <section id="album">
-          <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="col-xs-12 col-sm-4">
             <article class="album_container">
-              <img src="#" title="img1" />
-              <h3>title1</h3>
-              <p>text1</p>
+              <img src="images/p1.jpg" title="img1" />
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                vitae, ultricies congue gravida diam non fringilla.
+              </p>
             </article>
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="col-xs-12 col-sm-4">
             <article class="album_container">
-              <img src="#" title="img2" />
-              <h3>title2</h3>
-              <p>text2</p>
+              <img src="images/p2.jpg" title="img2" />
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                vitae, ultricies congue gravida diam non fringilla.
+              </p>
             </article>
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="col-xs-12 col-sm-4">
             <article class="album_container">
-              <img src="#" title="img3" />
-              <h3>title3</h3>
-              <p>text3</p>
+              <img src="images/p3.jpg" title="img3" />
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                vitae, ultricies congue gravida diam non fringilla.
+              </p>
             </article>
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="col-xs-12 col-sm-4">
             <article class="album_container">
-              <img src="#" title="img4" />
-              <h3>title4</h3>
-              <p>text4</p>
+              <img src="images/p4.jpg" title="img4" />
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                vitae, ultricies congue gravida diam non fringilla.
+              </p>
             </article>
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="col-xs-12 col-sm-4">
             <article class="album_container">
-              <img src="#" title="img5" />
-              <h3>title5</h3>
-              <p>text5</p>
+              <img src="images/p5.jpg" title="img5" />
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                vitae, ultricies congue gravida diam non fringilla.
+              </p>
             </article>
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="col-xs-12 col-sm-4">
             <article class="album_container">
-              <img src="#" title="img6" />
-              <h3>title6</h3>
-              <p>text6</p>
+              <img src="images/p6.jpg" title="img6" />
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                vitae, ultricies congue gravida diam non fringilla.
+              </p>
             </article>
           </div>
 
@@ -212,8 +235,6 @@
           <p>powered by ...</p>
         </section>
       </footer>
-
     </div>
-    
   </body>
 </html>

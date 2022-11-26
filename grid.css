@@ -54,7 +54,7 @@
   width: 8.33333333%;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 601px) {
   .col-sm-12 {
     width: 100%;
   }
@@ -93,7 +93,7 @@
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 993px) {
   .col-md-12 {
     width: 100%;
   }
