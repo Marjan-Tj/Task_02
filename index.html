@@ -16,15 +16,14 @@
 
   <body>
     <div class="wrapper">
-      <!-- A- sidebar -->
+      <!-- sidebar -->
       <aside id="sidebar">
-        <div id="sidebar_container" class="clearfix">
-          <span id="humburger"><i class="fa fa-bars"></i></span>
+        <div id="sidebar_container">
           <img src="images/user.gif" id="user" />
 
           <div id="sidebar_content">
             <h4>PORTFOLIO</h4>
-            <p>Template by W3-CSS</p>
+            <span>Template by W3-CSS</span>
 
             <nav id="side_nav">
               <a href="#portfolio"><i class="fa fa-th-large"></i>PORTFOLIO</a>
@@ -44,26 +43,31 @@
         </div>
       </aside>
 
+      <!-- A- header -->
+      <header id="header" class="clearfix">
+        <a id="humburger"><i class="fa fa-bars"></i></a>
+        <img src="images/user.gif" id="avatar" />
+      </header>
+
       <!-- B- main -->
-      <main id="content">
+      <main id="main">
         <!-- B1- portfolio -->
-        <section id="portfolio">
+        <div id="portfolio">
           <h1>My Portfolio</h1>
           <nav id="nav">
-            <span>Filter:</span>
+            <span id="filter">Filter:</span>
             <button id="all_btn">ALL</button>
             <button id="design_btn"><i class="fa fa-diamond"></i>Design</button>
-
             <button id="photo_btn"><i class="fa fa-photo"></i>Photos</button>
             <button id="art_btn"><i class="fa fa-map-pin"></i>Art</button>
           </nav>
-        </section>
+        </div>
 
-        <!-- B2- images -->
+        <!-- B2- album -->
         <section id="album">
           <div class="col-xs-12 col-sm-4">
             <article class="album_container">
-              <img src="images/p1.jpg" title="img1" />
+              <img src="images/p1.jpg" title="img1" alt="img1" />
               <h3>Lorem Ipsum</h3>
               <p>
                 Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
@@ -74,7 +78,7 @@
 
           <div class="col-xs-12 col-sm-4">
             <article class="album_container">
-              <img src="images/p2.jpg" title="img2" />
+              <img src="images/p2.jpg" title="img2" alt="img2" />
               <h3>Lorem Ipsum</h3>
               <p>
                 Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
@@ -85,7 +89,7 @@
 
           <div class="col-xs-12 col-sm-4">
             <article class="album_container">
-              <img src="images/p3.jpg" title="img3" />
+              <img src="images/p3.jpg" title="img3" alt="img3" />
               <h3>Lorem Ipsum</h3>
               <p>
                 Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
@@ -96,7 +100,7 @@
 
           <div class="col-xs-12 col-sm-4">
             <article class="album_container">
-              <img src="images/p4.jpg" title="img4" />
+              <img src="images/p4.jpg" title="img4" alt="img4" />
               <h3>Lorem Ipsum</h3>
               <p>
                 Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
@@ -107,7 +111,7 @@
 
           <div class="col-xs-12 col-sm-4">
             <article class="album_container">
-              <img src="images/p5.jpg" title="img5" />
+              <img src="images/p5.jpg" title="img5" alt="img5" />
               <h3>Lorem Ipsum</h3>
               <p>
                 Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
@@ -118,7 +122,7 @@
 
           <div class="col-xs-12 col-sm-4">
             <article class="album_container">
-              <img src="images/p6.jpg" title="img6" />
+              <img src="images/p6.jpg" title="img6" alt="img6" />
               <h3>Lorem Ipsum</h3>
               <p>
                 Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
@@ -127,20 +131,21 @@
             </article>
           </div>
 
+          <!-- B3- pagination -->
           <div id="pagination">
-            <div id="numbers">
-              <a href="#"><<</a>
-              <a href="#">1</a>
-              <a href="#">2</a>
-              <a href="#">3</a>
-              <a href="#">4</a>
-              <a href="#">>></a>
-            </div>
+            <ul>
+              <li class="number"><a href="#"><<</a></li>
+              <li class="number"><a href="#">1</a></li>
+              <li class="number"><a href="#">2</a></li>
+              <li class="number"><a href="#">3</a></li>
+              <li class="number"><a href="#">4</a></li>
+              <li class="number"><a href="#">>></a></li>
+            </ul>
           </div>
         </section>
 
-        <!-- B3- about me -->
-        <section id="about">
+        <!-- B4- about me -->
+        <article id="about">
           <h3>About Me</h3>
           <p>
             Just me, myself and I, exploring the universe of unknownment. I have a heart of love and
@@ -150,40 +155,40 @@
             rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam
             non fringilla.
           </p>
-        </section>
+        </article>
 
-        <!-- B4- technical skills -->
+        <!-- B5- technical skills -->
         <section id="skills">
-          <h3>Technical Skills</h3>
+          <header>Technical Skills</header>
 
-          <article class="skills_container">
+          <div class="skills_container">
             <h4>Photography</h4>
             <div class="progress_bar">
               <div id="progress1" class="percent">95%</div>
             </div>
-          </article>
+          </div>
 
-          <article class="skills_container">
+          <div class="skills_container">
             <h4>Web Design</h4>
             <div class="progress_bar">
               <div id="progress2" class="percent">85%</div>
             </div>
-          </article>
+          </div>
 
-          <article class="skills_container">
+          <div class="skills_container">
             <h4>Photoshop</h4>
             <div class="progress_bar">
               <div id="progress3" class="percent">80%</div>
             </div>
-          </article>
+          </div>
         </section>
 
-        <!-- B5- charge -->
+        <!-- B6- charge -->
         <section id="charge" class="clearfix">
-          <h3>How Much I Charge</h3>
+          <header>How Much I Charge</header>
 
           <div class="col-xs-12 col-sm-4">
-            <article class="charge_container">
+            <div class="charge_container">
               <ul>
                 <li class="title black">Bacic</li>
                 <li class="item">Web Design</li>
@@ -198,11 +203,11 @@
                   <button>Sign Up</button>
                 </li>
               </ul>
-            </article>
+            </div>
           </div>
 
           <div class="col-xs-12 col-sm-4">
-            <article class="charge_container">
+            <div class="charge_container">
               <ul>
                 <li class="title green">Pro</li>
                 <li class="item">Web Design</li>
@@ -217,11 +222,11 @@
                   <button>Sign Up</button>
                 </li>
               </ul>
-            </article>
+            </div>
           </div>
 
           <div class="col-xs-12 col-sm-4">
-            <article class="charge_container">
+            <div class="charge_container">
               <ul>
                 <li class="title black">Premium</li>
                 <li class="item">Web Design</li>
@@ -236,50 +241,50 @@
                   <button>Sign Up</button>
                 </li>
               </ul>
-            </article>
+            </div>
           </div>
         </section>
       </main>
 
-      <!-- C- footer -->
-      <footer>
-        <!-- C1- contact me -->
-        <section id="contact">
-          <div id="contact_container" class="clearfix">
-            <h3>Contact Me</h3>
+      <!-- C- contact me -->
+      <section id="contact">
+        <div id="contact_container" class="clearfix">
+          <header>Contact Me</header>
 
-            <div class="col-xs-12 col-sm-4">
-              <div class="contact_item" id="email">
-                <p class="icon"><i class="fa fa-envelope"></i></p>
-                <p class="text">email@email.com</p>
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4">
-              <div class="contact_item" id="location">
-                <p class="icon"><i class="fa fa-map-marker"></i></p>
-                <p class="text">Chicago, US</p>
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4">
-              <div class="contact_item" id="phone">
-                <p class="icon"><i class="fa fa-phone"></i></p>
-                <p class="text">512312311</p>
-              </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="contact_item" id="email">
+              <span class="icon"><i class="fa fa-envelope"></i></span>
+              <span class="text">email@email.com</span>
             </div>
           </div>
-        </section>
 
-        <!-- C2- send message -->
-        <section id="send_message">
-          <button><i class="fa fa-paper-plane"></i>Send Message</button>
-        </section>
-
-        <!-- C3- details -->
-        <section id="details" class="clearfix">
           <div class="col-xs-12 col-sm-4">
-            <article class="details_container" id="footer">
+            <div class="contact_item" id="location">
+              <span class="icon"><i class="fa fa-map-marker"></i></span>
+              <span class="text">Chicago, US</span>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
+            <div class="contact_item" id="phone">
+              <span class="icon"><i class="fa fa-phone"></i></span>
+              <span class="text">512312311</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- D- send message -->
+      <div id="send_message">
+        <button><i class="fa fa-paper-plane"></i>Send Message</button>
+      </div>
+
+      <!-- E- footer -->
+      <footer>
+        <section id="footer" class="clearfix">
+          <!-- E1- details -->
+          <div class="col-xs-12 col-sm-4">
+            <article class="details_container" id="details">
               <h3>FOOTER</h3>
               <p>
                 Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
@@ -289,27 +294,25 @@
             </article>
           </div>
 
+          <!-- E2- posts -->
           <div class="col-xs-12 col-sm-4">
             <article class="details_container" id="posts">
               <h3>BLOG POSTS</h3>
-              <div>
+              <div id="upper">
                 <img src="images/f1.jpg" />
                 <span class="up">Lorem</span>
-                <br />
                 <span class="down">Sed mattis nunc</span>
               </div>
-
-              <hr />
 
               <div>
                 <img src="images/f2.jpg" />
                 <span class="up">Ipsum</span>
-                <br />
                 <span class="down">Praes tinci sed</span>
               </div>
             </article>
           </div>
 
+          <!-- E3- tags -->
           <div class="col-xs-12 col-sm-4">
             <article class="details_container" id="tags">
               <h3>POPULAR TAGS</h3>
@@ -333,10 +336,10 @@
           </div>
         </section>
 
-        <!-- C4- power -->
-        <section id="power">
+        <!-- E4- power -->
+        <div id="power">
           <p>Powered by <a href="#">w3.css</a></p>
-        </section>
+        </div>
       </footer>
     </div>
   </body>
